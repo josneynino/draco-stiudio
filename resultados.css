@@ -1,0 +1,106 @@
+/* resultados.css */
+
+/* Banner específico para la página de Resultados */
+.results-hero-banner {
+    padding-top: 35%; /* Altura del banner, ajusta a tu gusto */
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.results-hero-banner .banner-content {
+    z-index: 2;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+    padding: 30px 50px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.results-hero-banner .banner-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    color: #00d0ff;
+}
+
+.results-hero-banner .banner-content p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+/* Sección de Tabla de Resultados */
+.results-table-section {
+    padding: 50px 20px;
+    background-color: #1a1a1a; /* Fondo oscuro para la sección */
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.results-table-section .section-title {
+    font-size: 2.8em;
+    color: #00d0ff;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.results-image-container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.results-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+}
+
+.results-note {
+    font-size: 1.2em;
+    margin-top: 30px;
+    font-style: italic;
+    color: #cccccc;
+}
+
+/* Media Queries para responsividad */
+@media screen and (max-width: 768px) {
+    .results-hero-banner {
+        padding-top: 50%; /* Más alto en móvil */
+    }
+
+    .results-hero-banner .banner-content {
+        padding: 20px 30px;
+    }
+
+    .results-hero-banner .banner-content h1 {
+        font-size: 2.5em;
+    }
+
+    .results-hero-banner .banner-content p {
+        font-size: 1em;
+    }
+
+    .results-table-section {
+        padding: 30px 15px;
+    }
+
+    .results-table-section .section-title {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+}
